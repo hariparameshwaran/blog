@@ -1,0 +1,17 @@
+title: Hari Parameshwaran
+description: Notes on agentic AI architecture, ADLC, and building enterprise AI systems.
+theme: minima
+
+header_pages:
+  - about.md
+
+author:
+  name: Hari Parameshwaran
+
+permalink: /:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+markdown: kramdown
