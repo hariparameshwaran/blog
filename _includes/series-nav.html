@@ -1,0 +1,16 @@
+{% if page.series %}
+  {% assign chapters = site.posts | where: "series", page.series | sort: "series_order" %}
+  {% assign current_index = chapters | map: "series_order" | index_of: page.series_order %}
+  <hr>
+  <p>
+    {% if current_index > 0 %}
+      {% assign prev_post = chapters[current_index | minus: 1] %}
+      ← <a href="{{ prev_post.url | relative_url }}">{{ prev_post.title }}</a>
+    {% endif %}
+    {% assign next_index = current_index | plus: 1 %}
+    {% if next_index < chapters.size %}
+      {% assign next_post = chapters[next_index] %}
+      | <a href="{{ next_post.url | relative_url }}">{{ next_post.title }}</a> →
+    {% endif %}
+  </p>
+{% endif %}

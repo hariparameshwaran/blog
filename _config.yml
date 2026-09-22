@@ -5,6 +5,7 @@ theme: architect
 header_pages:
   - about.md
   - categories.md
+  - series.md
 
 author:
   name: Harinath Parameshwaran
