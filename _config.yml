@@ -4,9 +4,10 @@ theme: minima
 
 header_pages:
   - about.md
+  - categories.md
 
 author:
-  name: Hari Parameshwaran
+  name: Harinath Parameshwaran
 
 permalink: /:year/:month/:day/:title/
 
